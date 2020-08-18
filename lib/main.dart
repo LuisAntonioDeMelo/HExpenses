@@ -1,4 +1,4 @@
-import 'package:Hexpenses/models/Transacao.dart';
+import 'package:Hexpenses/components/Transaction_user.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,27 +18,11 @@ class HExpenses extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final _transactions = [
-      Transaction(
-        id: 't1',
-        title: 'Novo tenis',
-        value: 340.50,
-        date: DateTime.now(),
-      ),
-      Transaction(
-        id: 't2',
-        title: 'Pagar conta',
-        value: 70,
-        date: DateTime.now(),
-      )
-    ];
-
     return Scaffold(
       appBar: AppBar(
         title: Center(child: Text('Despesas Pessoais')),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
@@ -48,54 +32,7 @@ class MyHomePage extends StatelessWidget {
               child: Text('Graficos'),
             ),
           ),
-          Column(
-            children: _transactions.map((tr) {
-              return Card(
-                child: Row(
-                  children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.symmetric(
-                        horizontal: 15,
-                        vertical: 10,
-                      ),
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.purple,
-                          width: 2,
-                        ),
-                      ),
-                      child: Text(
-                        'R\$ : ${tr.value.toStringAsFixed(2)}',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                          color: Colors.purple,
-                        ),
-                      ),
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          tr.title,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Text(
-                          tr.date.toString(),
-                          style: TextStyle(
-                            color: Colors.grey[700],
-                          ),
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              );
-            }).toList(),
-          ),
+          TransactionUser()
         ],
       ),
     );
