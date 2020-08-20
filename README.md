@@ -1,7 +1,7 @@
 # Hexpenses
 
 ### 📳 telas 
-<p>Projeto criado para gerir despesas do dia a dia, criando um relátorio mensal de gastos.</p>
+<p>Projeto criado para gerir despesas do dia a dia, Você pode controlar suas despesas, fazer sua lista, verificar itens e comparar preços. e fazer algum check-up sobre a despesa da semana e despesas mensais.</p>
 </br>
 in dev 💻 ...
 <p align="center">
