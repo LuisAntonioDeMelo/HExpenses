@@ -10,7 +10,7 @@ in dev 💻 ...
 <img src="assets\mock\s2.png" width="200" title="hover text">
 </p>
 
-<br/>
+
 ### 🔧 Desenvolvimento 
 
 Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
