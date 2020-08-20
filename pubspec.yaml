@@ -19,5 +19,21 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
 
+
+fonts:
+  - family : OpenSans
+    fonts :
+      - asset: assets\fonts\OpenSans-Bold.ttf
+        weight: 700
+      - asset: assets\fonts\OpenSans-Regular.ttf
   
+  - family : Quicksand
+    fonts :
+      - asset: assets\fonts\Quicksand-Regular.ttf
+      - asset: assets\fonts\Quicksand-Medium.ttf
+      - asset: assets\fonts\Quicksand-Light.ttf
+      - asset: assets\fonts\Quicksand-Bold.ttf
+        weight: 700
